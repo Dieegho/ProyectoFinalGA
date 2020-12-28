@@ -10,8 +10,10 @@ int poblacion[manzanas] = ...;
 int centros = 6554; // 412840 / 63
 float cost_distances[manzanas][locales] = ...;
 int urbanos[manzanas] = ...;
+int M = 100000000;
  
 dvar float+ x[manzanas][locales];
+dvar boolean w[manzanas][locales];
 
 dexpr float cost = sum(i in manzanas, j in locales) cost_distances[i][j] * x[i][j];
 
@@ -31,5 +33,8 @@ subject to {
  	  sum(j in locales) x[i][j] == poblacion[i];
  cons5:
  	forall(i in manzanas, j in locales)
-	  urbanos[i] * x[i][j] * cost_distances[i][j] <= 7000 * x[i][j];
+	  urbanos[i] * w[i][j] * cost_distances[i][j] <= 13000;
+ cons6:
+ 	forall(i in manzanas, j in locales)
+ 	  x[i][j] <= M * w[i][j];
 }
