@@ -32,7 +32,7 @@ with open('cuadras_maipu.csv') as personas_csv:
         line_cnt += 1
 
 # 1 to many
-with open('distances_final.csv', mode='w') as distances_file:
+with open('distances.csv', mode='w') as distances_file:
     distances_writer = csv.writer(distances_file, delimiter=';')
 
     for person in personas:
