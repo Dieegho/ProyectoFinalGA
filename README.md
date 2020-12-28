@@ -18,3 +18,5 @@ Dentro de este repositorio, existen 4 archivos que son base para poder tener la 
 4. data.py
 
 El primer archivo contiene las coordenadas y nombres de los 63 colegios que utilizamos como centros de votación en la comuna de Maipú. El segundo archivo contiene las coordenadas de los centroides de todas las cuadras de la comuna de Maipú junto a la cantidad de personas que viven en cada cuadra. El tercer archivo, es el resultado obtenido de **Project OSRM**, que corresponde a la distancia que hay entre cada cuadra y los 63 puntos de votación. Finalmente, el último archivo es el encargado de generar el *distances.csv*.
+
+Por otro lado, hay dos carpetas (*Opcion1* y *Opcion2*) las cuales contienen los códigos y los datos respectivos para cada solución de modelos entregados en el informe.
