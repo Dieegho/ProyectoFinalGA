@@ -53,7 +53,7 @@ with open('distances.csv', mode='w') as distances_file:
 
 
 # 1 by 1
-# with open('distances_final.csv', mode='w') as distances_file:
+# with open('distances.csv', mode='w') as distances_file:
 #     distances_writer = csv.writer(distances_file, delimiter=';')
 
 #     for person in personas:
