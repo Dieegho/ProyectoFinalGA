@@ -10,9 +10,11 @@ Por otro lado, para buscar la distancia que hay entre dos puntos geográficos se
 
 ## Archivos
 
-Dentro de este repositorio, existen 3 archivos:
+Dentro de este repositorio, existen 4 archivos que son base para poder tener la información que se debe ingresar en **CPLEX**:
+
 1. colegios.csv
 2. cuadras_maipu.csv
 3. distances.csv
+4. data.py
 
-El primer archivo contiene las coordenadas y nombres de los 63 colegios que utilizamos como centros de votación en la comuna de Maipú. El segundo archivo contiene las coordenadas de los centroides de todas las cuadras de la comuna de Maipú junto a la cantidad de personas que viven en cada cuadra. El tercer archivo, es el resultado obtenido de **Project OSRM**, que corresponde a la distancia que hay entre cada cuadra y los 63 puntos de votación.
+El primer archivo contiene las coordenadas y nombres de los 63 colegios que utilizamos como centros de votación en la comuna de Maipú. El segundo archivo contiene las coordenadas de los centroides de todas las cuadras de la comuna de Maipú junto a la cantidad de personas que viven en cada cuadra. El tercer archivo, es el resultado obtenido de **Project OSRM**, que corresponde a la distancia que hay entre cada cuadra y los 63 puntos de votación. Finalmente, el último archivo es el encargado de generar el *distances.csv*.
